@@ -1,0 +1,90 @@
+
+
+promt_zero = """
+
+### Tarea.
+Clasifica el siguiente texto en negativo, neutro o positivo.
+texto = "La persona que atiende, una jovencita, con la boca llena de comida se burló de mí por la pregunta que le hice sobre el medicamento. Y además se burló porque pedí un medicamento genérico. Con muecas y todo."
+
+### Contexto.
+El texto dado son los comentarios que hacen los clientes en la web del local en el que fueron atendidos.
+
+### Instrucciones de Salida.
+Devolver la siguiente información:
+1. **Texto**: Texto del cliente
+2. **Sentimiento**.Sentimiento identificado en el texto
+3. **Confidence** Es el confidence score (Este debe ir entre 0=menos seguro a 100 más seguro)
+
+### Estructura de salida
+Texto: <texto>
+Sentimiento: <negativo, positivo, neutro>
+confidence:<score 0-100>
+
+"""
+
+promt_zero = """
+
+### Tarea.
+Clasifica el siguiente texto en negativo, neutro o positivo.
+texto = "Muy buena atención, me encanta la maca helty"
+
+### Contexto.
+El texto dado son los comentarios que hacen los clientes en la web del local en el que fueron atendidos.
+
+### Instrucciones de Salida.
+Devolver la siguiente información:
+1. **Texto**: Texto del cliente
+2. **Sentimiento**.Sentimiento identificado en el texto
+3. **Confidence** Es el confidence score (Este debe ir entre 0=menos seguro a 100 más seguro)
+
+### Estructura de salida
+Texto: <texto>
+Sentimiento: <negativo, positivo, neutro>
+confidence:<score 0-100>
+
+"""
+
+
+promt_zero = """
+### Tarea.
+Clasifica el siguiente texto en negativo, neutro o positivo.
+Texto = "Variedad de productos"
+
+### Contexto.
+El texto dado son los comentarios que hacen los clientes en la web del local en el que fueron atendidos.
+
+### Instrucciones de Salida.
+Devolver la siguiente información:
+1. **Texto**: Texto del cliente
+2. **Sentimiento**.Sentimiento identificado en el texto
+3. **Confidence** Es el confidence score (Este debe ir entre 0=menos seguro a 100 más seguro)
+
+### Estructura de salida
+Texto: <texto>
+Sentimiento: <negativo, positivo, neutro>
+confidence:<score 0-100>
+
+"""
+promt_few = """
+### Tarea.
+Clasifica el siguiente texto en negativo, neutro o positivo.
+texto = "Variedad de productos"
+
+### Contexto.
+El texto dado son los comentarios que hacen los clientes en la web del local en el que fueron atendidos.
+
+### Instrucciones de Salida.
+Devolver la siguiente información:
+1. **Texto**: Texto del cliente
+2. **Sentimiento**.Sentimiento identificado en el texto
+3. **Confidence** Es el confidence score (Este debe ir entre 0=menos seguro a 100 más seguro)
+
+### Ejemplos.
+Encuentro lo que necesito/ Positivo.
+
+### Estructura de salida
+Texto: <texto>
+Sentimiento: <negativo, positivo, neutro>
+confidence:<score 0-100>
+
+"""

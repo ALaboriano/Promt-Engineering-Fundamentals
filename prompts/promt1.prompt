@@ -1,0 +1,79 @@
+prompt1 = """
+Dame una lista de destinos turísticos a los que puedo visitar este 2025.
+"""
+prompt2 = """
+Dame una lista de destinos turísticos en Perú, a los que puedo visitar este 2025.
+"""
+
+prompt3 = """
+### Role
+Actúa como un Guía Turístico, que conoce muy bien el Perú.
+
+### Tarea 
+Dame una lista de 5 destinos turísticos a los que pueda visitar este 2025.
+
+### Contexto.
+Me gusta la playa y el calor.
+No me gusta la lluvia ni el frio.
+
+### Pregunta o salida.
+De estos 5 destinos turísticos, además del nombre y descripción, necesito el nombre del departamento y provincia en la que esta ubicado y la distancia en KM que hay que recorrer desde Lima, y en promedio, cuantos soles gastaría en cada lugar si me quedo una semana
+### Estructura de Salida.
+La salida deberá ser un json con la siguiente estructura:
+{
+'destino_turistico': <nombre del destino turistico>,
+'descripción':<Descripción corta del destino turístico>,
+'departamento':<Nombre del departamento>,
+'provincia':<Nombre de la Provincia>,
+'Distancia':<90km>,
+'Gasto':<Gasto semanal>
+}
+"""
+
+prompt4 = """
+### Rol
+Actúa como un Guía Turístico experto en Perú, especializado en recomendar destinos turísticos de acuerdo a las preferencias personales de los viajeros.
+
+### Tarea
+Proporciona una lista de 5 destinos turísticos en Perú recomendados para visitar durante el 2025.
+
+### Contexto
+- Me gusta disfrutar del sol, el calor y la playa.
+- No me agrada la lluvia ni el frío.
+- Busco lugares que combinen relax, actividades recreativas y buena gastronomía.
+
+### Instrucciones de Salida
+Para cada destino turístico, proporciona la siguiente información detallada:
+
+1. **Nombre del destino turístico**: El nombre oficial del destino.
+2. **Descripción**: Una descripción breve que destaque los principales atractivos y actividades que ofrece el lugar.
+3. **Departamento**: El departamento de Perú donde se ubica el destino.
+4. **Provincia**: La provincia específica donde se encuentra el destino.
+5. **Distancia desde Lima**: La distancia aproximada en kilómetros que se debe recorrer desde la ciudad de Lima para llegar al destino.
+6. **Gasto semanal promedio**: Una estimación del gasto total en soles peruanos (PEN) para una estancia de una semana, considerando alojamiento, comidas, transporte local y actividades recreativas.
+7. **Confidence score**: Asigna un puntaje de confianza de 0 a 100 para cada campo (ejemplo: “confidence_score”: 95), indicando cuán seguro estás de la precisión de la información.
+
+### Estructura de salida
+Devuelve los datos en formato JSON siguiendo esta estructura:
+
+```json
+[
+  {
+    "destino_turístico": "<nombre del destino turístico>",
+    "descripción": "<descripción breve del destino turístico>",
+    "departamento": "<nombre del departamento>",
+    "provincia": "<nombre de la provincia>",
+    "distancia": "<X km>",
+    "gasto_semanal_promedio": "<X soles>",
+    "confidence_scores": {
+      "destino_turístico": <score de 0 a 100>,
+      "descripción": <score de 0 a 100>,
+      "departamento": <score de 0 a 100>,
+      "provincia": <score de 0 a 100>,
+      "distancia": <score de 0 a 100>,
+      "gasto_semanal_promedio": <score de 0 a 100>
+    }
+  }
+]
+
+"""
