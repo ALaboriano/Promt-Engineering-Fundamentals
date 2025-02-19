@@ -5,6 +5,3 @@ En este espacio veremos los principios y conceptos básicos del Prompt Engineeri
 
 
 
-
-
-
